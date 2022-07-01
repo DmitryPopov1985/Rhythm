@@ -76,6 +76,8 @@ li {
 }
 .page__reviews {
 }
+.page__favorite {
+}
 /* ------------------------------------------------ */
 
 [class*="__container"] {
@@ -830,15 +832,7 @@ li {
     .slide-swiper-reviews__picture {
         margin-bottom: 25px;
     }
-    .swiper-reviews__pagination .swiper-pagination-bullet-active {
-        transform: rotate(0);
-    }
-    .swiper-reviews__pagination .swiper-pagination {
-        position: relative;
-        bottom: 0;
-        justify-content: center;
-        padding-top: 30px;
-    }
+    
 }
 @media (max-width: 767.98px) {
     .reviews {
@@ -863,5 +857,199 @@ li {
     .slide-swiper-reviews__text:not(:last-child) {
         margin-bottom: 25px;
     
+    }
+    .swiper-reviews__pagination{
+        position: relative;
+        bottom: 0;
+        justify-content: center;
+      
+    }
+    .slide-swiper-reviews__position {
+        margin-bottom: 30px;
+    }
+}
+
+
+/*-----------------------------------------------------*/
+
+
+.favorite {
+    padding-bottom: 120px;
+}
+.favorite__container {
+   display: flex;
+   align-items: center;
+}
+.favorite__body {
+    padding-right: 20px;
+    flex: 0 1 50%;
+}
+.favorite__title {
+    font-size: 48px;
+    text-align: left;
+    line-height: 1.4;
+}
+.favorite__title:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.favorite__apps {
+}
+.apps-favorite {
+    display: flex;
+    gap: 25px;
+}
+.apps-favorite__item img{
+    max-width: 100%;
+}
+.favorite__images {
+    flex: 0 1 50%;
+    text-align: center;
+}
+.favorite__images img {
+    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .favorite {
+        padding-bottom: 50px;
+    }
+    .favorite__container {
+        flex-direction: column;
+    }
+    .favorite__title {
+        font-size: 38px;
+       
+    }
+    .favorite__title:not(:last-child) {
+        margin-bottom: 25px;
+    }
+  
+}
+@media (max-width: 767.98px) {
+    .favorite {
+        padding-bottom: 30px;
+    }
+   
+  
+}
+/*---------------------------------------------------------------*/
+
+.footer {
+    background-color: #eee;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.footer__container {
+}
+.footer__body {
+    
+}
+.body-footer {
+    display: flex;
+    gap: 50px;
+}
+.body-footer__column {
+    flex: 1 1 auto;
+}
+
+.body-footer__logo {
+    display: inline-block;
+    
+}
+.body-footer__logo:not(:last-child) {
+    margin-bottom: 28px;
+}
+.body-footer__contacts {
+}
+.contacts-footer {
+}
+.contacts-footer__item {
+}
+.contacts-footer__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.contacts-footer__link {
+    display: inline-block;
+    line-height: 24px;
+    padding-left: 44px;
+    color: #666;
+}
+.contacts-footer__link_mail {
+    background: url('../img/mail.svg') left no-repeat;
+}
+.contacts-footer__link_location {
+    background: url('../img/location.svg') left no-repeat;
+}
+.body-footer__menu {
+}
+.menu-footer {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+.menu-footer__column {
+}
+.menu-footer__title {
+    text-transform: uppercase;
+    color: #121212;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+}
+.menu-footer__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.menu-footer__link {
+    color: #666;
+}
+.body-footer__social {
+}
+.social-footer {
+}
+.social-footer__title {
+    text-transform: uppercase;
+    color: #121212;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.social-footer__items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.social-footer__item {
+}
+.footer__copy {
+    text-align: center;
+    padding-top: 80px;
+}
+@media (max-width: 991.98px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .body-footer {
+        flex-wrap: wrap;
+    }
+    .body-footer__column:first-child {
+        flex: 1 1 100%;
+    }
+    .menu-footer {
+        display: flex;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 767.98px) {
+    .footer__copy {
+        padding-top: 30px;
     }
 }
